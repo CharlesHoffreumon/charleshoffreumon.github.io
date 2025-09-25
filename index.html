@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			  <section data-visibility="uncounted">
+			    <h2>Three Essays on Technology Adoption in Firms</h2>
+			    <h3>Charles Hoffreumon</h3>
+			    <h3>October 6, 2025
+			  </section>
+			  <section>
+			    <h3>In this Presentation</h3>
+			    <ol>
+			      <li>How pervasive are digital technologies in determined countries?</li>
+			      <li>Should governments and education institutions invest in training a few very qualified AI experts or a lot of AI-savy IT professionals?</li>
+			      <li>Do I need to be an expert to keep my job? Will AI adoption mean that only geeks will still have jobs in the future?</li>
+			    </ol>
+			  </section>
+			  <section>
+			    <h3>But first: Is Artificial Intelligence Different from Previous General Purpose Technologies?</h3>
+			    <p><b>NOT</b> from my research, this is just to set the stage</p>
+			    <ul>
+			      <li class="fragment">General Purpose Technologies in a nutshell</li>
+			      <li class="fragment">Is AI a General Purpose Technology?</li>
+			      <li class="fragment">How is AI different?</li>
+			    </ul>
+			  </section>
+			  <section>
+			    <h3>In this Presentation</h3>
+			    <ol>
+			      <li style="color: darkred;">How pervasive are digital technologies in determined countries?</li>
+			      <li>Should governments and education institutions invest in training a few very qualified AI experts or a lot of AI-savy IT professionals?</li>
+			      <li>Do I need to be an expert to keep my job? Will AI adoption mean that only geeks will still have jobs in the future?</li>
+			    </ol>
+			  </section>
+			  <section>
+			    <h3>How do we know how popular technologies are?</h3>
+			    <div style="display: inline-flex; flex-wrap: wrap;  justify-items: center;">
+			      <div style="width: 50%;">
+				<ul>
+				  <li>It is not that easy.</li>
+				  <li>Reliance on surveys by academics, polling institutes, or public entities.</li>
+				  <li>Surveys have drawbacks.</li>
+				</ul>
+			      </div>
+			      
+			      <div  style="width: 50%;">
+				<div class="r-stack">
+				  <img
+				    src="assets/forecasting/internet_use.png"
+				    data-preview-image
+				    />
+				  <img
+				    class="fragment"
+				    src="assets/forecasting/professional_social_networking.png"
+				    data-preview-image
+				    />
+				  <img
+				    class="fragment"
+				    src="assets/forecasting/download_software.png"
+				    data-preview-image
+				    />
+				</div>
+			      </div>
+			    </div>
+			  </section>
+			  <section>
+			    <h3>How does Technology Diffuse?</h3>
+			    <p>Generally, in S-shaped function.</p>
+			    <p>Formally, we can use the <a href="https://en.wikipedia.org/wiki/Generalised_logistic_function">Generalised Logistic Function</a>: \[Y(t) = \frac{K}{(C+Qe^{-Bt})^{\frac{1}{\nu}}}\]</p>
+			    <p class="fragment">Our paper (Hoffreumon and Labhard, 2021) proposes a way to estimate the parameters to forecast or nowcast it using Bayesian Hierarchical Models.</p>
+			  </section>
+			  <section>
+			    <h3>Our proposed way of estimating</h3>
+			    <div style="display: inline-flex; flex-wrap: wrap;  justify-items: center;">
+			      <div style="width: 50%;">
+				<ul>
+				  <li>Simple model with only countries and technology "effects"</li>
+				  <li>We infer parameters for unknown countries or unknown technologies using hierarchical priors</li>
+				  <li class="fragment" data-fragment-index="2">It works surprisingly well for such a simple model</li>
+				</ul>
+			      </div>
+			      <div style="width: 50%;">
+				<div class="r-stack">
+				  <img
+				    src="assets/forecasting/model.png"
+				    class="fragment fade-out"
+				    data-fragment-index="2"
+				    data-preview-image
+				    />
+				  <img
+				    class="fragment"
+				    src="assets/forecasting/pit_both.png"
+				    data-fragment-index="2"
+				    data-preview-image
+				    />
+				</div>
+			      </div>
+			    </div>
+			  </section>
+			  <section>
+			    <h3>The Technique Proposed has the Property to Quantify the Uncertainty of the Forecast</h3>
+			    <img
+				    src="assets/forecasting/germany_forecast_example.png"
+				    data-preview-image
+				    />
+			  </section>
+			  <section>
+			    <h3>In this Presentation</h3>
+			    <ol>
+			      <li >How pervasive are digital technologies in determined countries?</li>
+			      <li style="color: darkred;">Should governments and education institutions invest in training a few very qualified AI experts or a lot of AI-savy IT professionals?</li>
+			      <li>Do I need to be an expert to keep my job? Will AI adoption mean that only geeks will still have jobs in the future?</li>
+			    </ol>
+			  </section>
+			  <section>
+			    <h3>How do firms acquire artificial intelligence software?</h3>
+			    <div style="display: inline-flex; flex-wrap: wrap;  justify-items: center;">
+			      <div style="width: 50%">
+				<h4>They buy it...</h4>
+				<ul>
+				  <li><b>Suppliers</b> develop AI solutions and sell them to firms that integrate it to their systems.</li>
+				  <li>It is important to have <b>a few highly skilled</b> workers to produce the systems that will be distributed.</li>
+				</ul>
+			      </div>
+			      <div class="fragment" style="width: 50%">
+				<h4>... and/or they make it</h4>
+				<ul>
+				  <li><b>Every firm</b> develop their own AI software tailor-made for their specific use case.</li>
+				  <li>It is important to train <b>a large number</b> of professionals able to create new AI systems.</li>
+				</ul>
+			      </div>
+			    </div>
+			  </section>
+			  <section>
+			    <h3>The data</h3>
+			    <div style="display: inline-flex; flex-wrap: wrap;  justify-items: center;">
+			      <div style="width: 50%;">
+				<ul>
+				  <li>Surveys for the DG CONNECT.</li>
+				  <li>Several thousand respondents across Europe and Sectors.</li>
+				  <li>Data from 2020 (January-April).</li>
+				</ul>
+			      </div>
+			      <div style="width: 50%;">
+				<div class="r-stack">
+				  <img
+				    src="assets/make_or_buy/sourcing_global.png"
+				    data-preview-image
+				    />
+				  <img
+				    class="fragment"
+				    src="assets/make_or_buy/sourcing_per_sector.png"
+				    data-preview-image
+				    />
+				</div>
+			      </div>
+			    </div>
+			  </section>
+			  <section>
+			    
+			  </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+			    hash: true,
+			    slideNumber: 'c/t',
+			    katex: {
+				local: 'node_modules/katex',
+			    },
+
+				// Learn about plugins: https://revealjs.com/plugins/
+			    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
