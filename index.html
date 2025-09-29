@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Charles' Dissertation Public Defense</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -12,6 +12,17 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+		  .fragment.appears{
+		      display: none;
+		  }
+		  .fragment.appears.visible {
+		      display: inline;
+		  }
+		  .fragment.disappears.visible{
+		      display: none;
+		  }
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -192,6 +203,74 @@
 			      <li>There are some market dynamics.</li>
 			      <li class="fragment">The data only allows for a static view of the problem.</li>
 			    </ul>
+			  </section>
+			  <section>
+			    <h3>In this Presentation</h3>
+			    <ol>
+			      <li >How pervasive are digital technologies in determined countries?</li>
+			      <li>Should governments and education institutions invest in training a few very qualified AI experts or a lot of AI-savy IT professionals?</li>
+			      <li style="color: darkred;">Do I need to be an expert to keep my job? Will AI adoption mean that only geeks will still have jobs in the future?</li>
+			    </ol>
+			  </section>
+			  <section>
+			    <section>
+			      <h3><span class="fragment custom disappears" data-fragment-index="1">Two</span>
+				<span class="fragment custom appears" style="color: darkred;" data-fragment-index="1">Three</span>
+				ways to deliver AI</h3>
+			      <div style="display: inline-flex; flex-wrap: wrap;  justify-items: center; width: 100%;">
+				<div style="width: 30%; margin: 5px;">
+				  <h4>"Programmatic" AI</h4>
+				  <img
+				    src="assets/no_code_low_code/saintignucius.jpg">
+				</div>
+				<div class="fragment" style="width: 30%; margin: 5px;" data-fragment-index="1">
+				  <h4>No-code, Low-code AI</h4>
+				  <img
+				    src="assets/no_code_low_code/knime.png"
+				    data-preview-image>
+				</div>
+				<div style="width: 30%; margin: 5px;">
+				  <h4>Large Language Models</h4>
+				  <img
+				    src="assets/no_code_low_code/llm.jpg">
+				</div>
+			      </div>
+			    </section>
+			    <section>
+			      <h3>More in details</h3>
+			      <img
+				src="assets/no_code_low_code/no_code_vs_gen_ai.png">
+			    </section>
+			  </section>
+			  <section>
+			    <h3>Impacts of No-code, Low-code AI on employment</h3>
+			    <ul>
+			      <li>Is No-code, Low-code AI different from programmatic AI for the worker?</li>
+			      <li>Who benefits from No-code, Low-code AI?</li>
+			      <li>What impact on the demand for labour?</li>
+			    </ul>
+			  </section>
+			  <section>
+			    <h3>We use a large dataset to answer those questions</h3>
+			    <ul>
+			      <li>48.590.361 online job postings from the US</li>
+			      <li>Info about the profile of the job as well as the advertised wage.</li>
+			      <li>Bias towards white-collar jobs (but likely not an issue considering the questions)</li>
+			    </ul>
+			  </section>
+			  <section>
+			    <h3>No-code, Low-code is very sector and activity specific</h3>
+			    <div class="r-stack" style="max-height: 60vh;">
+				  <img
+				    src="assets/no_code_low_code/sectors.png"
+				    data-preview-image
+				    />
+				  <img
+				    class="fragment"
+				    src="assets/no_code_low_code/occupations.png"
+				    data-preview-image
+				    />
+				</div>
 			  </section>
 			</div>
 		</div>
